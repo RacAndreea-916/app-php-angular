@@ -1,0 +1,22 @@
+.logs-div{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.bottom{
+    margin-top: 10px;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.pagination{
+    margin-right: 20px;
+}
+
+.filtering{
+
+    margin-top: 10px;
+    margin-left: 20px;
+
+}

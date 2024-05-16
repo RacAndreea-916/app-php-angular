@@ -1,0 +1,9 @@
+<div *ngFor="let log of logs">
+    {{ log.LogRequestId }} - {{ log.Type }} - {{ log.Log }}
+  </div>
+  <app-pagination
+    [currentPage]="currentPage"
+    [totalPages]="totalPages"
+    (pageChange)="onPageChange($event)"
+  ></app-pagination>
+  

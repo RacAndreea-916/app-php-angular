@@ -1,0 +1,70 @@
+<!-- add_log.php -->
+<!-- <?php
+session_start(); // Start the session
+
+// Ensure the user is logged in
+if (!isset($_SESSION['userId'])) {
+    header("Location: login.php"); // Redirect to login if not logged in
+    exit();
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Log</title>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center; 
+        }
+        input, textarea {
+            width: 100%; 
+            margin-bottom: 10px;
+            padding-right: 10px;
+            margin-right: 20px; 
+            padding: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            border-radius: 5px; 
+            border: 1px solid #ccc; 
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Add Log</h2>
+    <form action="add_log_handler.php" method="POST"> 
+
+        <label for="id">Log Id:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="log_type">Log Type:</label>
+        <input type="text" id="log_type" name="log_type" required><br>
+
+        <label for="severity">Severity:</label>
+        <input type="text" id="severity" name="severity" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <button type="submit">Add Log</button>
+        
+    </form>
+    <a href="start.php"><button>Back</button></a>
+</div>
+</body>
+</html>
